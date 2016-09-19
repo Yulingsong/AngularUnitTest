@@ -1,0 +1,25 @@
+{
+  "name": "application-name",
+  "description": "AngularUnitTest",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "http-server": "^0.9.0",
+    "install": "^0.8.1",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-junit-reporter": "^1.1.0",
+    "protractor": "^4.0.8"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1",
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js  --single-run"
+  }
+}
